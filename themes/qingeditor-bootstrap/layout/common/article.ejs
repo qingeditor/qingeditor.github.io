@@ -1,0 +1,29 @@
+<div class="news-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 content">
+                <div class="title">
+                    <h4><%= post.title %></h4>
+                    <span><time datetime="<%- date(post.date, "Y-MM-D h:m:s")%>"><%- date(post.date, "Y-MM-D h:m:s")%></time></span>
+                </div>
+                <hr/>
+                <div class="detail">
+                    <%- post.content %>
+                </div>
+
+                <% if (page.prev || page.next){ %>
+                <div class="page-div">
+                    <% if (page.prev){ %>
+                    <span class="pre"><a href="<%- config.root %><%- page.prev.path %>">上一篇:<%= page.prev.title %></a></span>
+                    <% } %>
+                    <% if (page.next){ %>
+                    <span class="next"><a href="<%- config.root %><%- page.next.path %>">下一篇:<%= page.next.title %></a></span>
+                    <% } %>
+                </div>
+                <% } %>
+
+            </div>
+            <%- partial('comment') %>
+        </div>
+    </div>
+</div>

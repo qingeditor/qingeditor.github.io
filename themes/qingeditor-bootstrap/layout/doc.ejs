@@ -1,0 +1,50 @@
+
+<div class="hidden-md-up sm-header">
+    <div class="toggler" id="slideClose"></div>
+    <img src="/images/logo-green.png">
+</div>
+<div id="slide" class="container sidebar sidebar-left hidden-md-up">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list-container">
+            <%- generate_docs_sidebar_site_menu_for_mobile() %>
+            <div class="mobile-title-list" id="categoryList">
+                <%- generate_docs_sidebar_doc_list_for_mobile() %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container content">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 hidden-sm-down title-list">
+            <%- generate_docs_sidebar_for_pc() %>
+        </div>
+
+        <div class="col-lg-9 col-md-9 article-content">
+            <div class="head-list">
+                <ul>
+                    <li><a href="#item-1">路由</a></li>
+                    <li><a href="#item-2">中间件</a></li>
+                    <li>
+                        <a href="#item-3">请求方法</a>
+                        <ul>
+                            <li><a href="#item-3-1">post</a></li>
+                            <li><a href="#item-3-2">get</a></li>
+                            <li><a href="#item-3-3">delete</a></li>
+                            <li><a href="#item-3-4">head</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="article">
+               <%- page.content %>
+            </div>
+
+            <% if (theme.duoshuo.enable && page.comments){ %>
+            <section class="comment">
+                <div class="ds-thread" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
+            </section>
+            <% } %>
+        </div>
+    </div>
+</div>

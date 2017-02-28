@@ -1,0 +1,14 @@
+<%
+    let curVersion = config.cur_version;
+    let redirectType = page.redirect_type || 1;
+    let url;
+    if (1 === redirectType) {
+        url = "/docs/"+curVersion+"/";
+    } else if (2 === redirectType) {
+        url = "/docs/"+curVersion+"/"+page.doc_key+".html";
+    }
+%>
+<div style = "margin:200px auto;text-align: center;font-size: 1.2em;">loading ... </div>
+<script type="application/javascript">
+    window.location.replace("<%= url %>");
+</script> 

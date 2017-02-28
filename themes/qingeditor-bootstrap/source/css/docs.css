@@ -1,0 +1,131 @@
+.glyphicon-chevron-right:before {
+    content: "\E224";
+}
+
+.glyphicon-chevron-left:before {
+    content: "\E225";
+}
+
+.glyphicon-chevron-down:before {
+    content: "\E602";
+}
+
+.list-group a{
+    color: #999;
+}
+.article h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+.article h4 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.article h3 a:focus {
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+#slide {
+    padding-top: 45px;
+    left:-1000px;
+    overflow: scroll;
+}
+.sidebar-left a{
+    text-decoration: none;
+}
+
+.sidebar-left .category{
+    display: block;
+    text-decoration: none;
+    color:#999;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+.sm-header {
+    background: white;
+    height: 40px;
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sm-header img {
+    display: block;
+    height: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.title-list {
+    padding: 23px 0 20px 10px;
+    border-right: 1px solid #eee;
+    margin-bottom: 60px;
+    margin-top: 7px;
+}
+.title-list h4{
+    width: 80%;
+    color: #777;
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 1px dotted #aaa;
+    font-weight: 300;
+}
+
+.title-list a{
+    width: 80%;
+    color: #aaa;
+    display: block;
+    text-decoration: none;
+}
+.title-list a:hover {
+    color: #42c950;
+}
+
+.title-list a.current {
+    color: #42c950;
+}
+@media (min-width:992px) {
+    .content {
+        margin-top: 70px;
+    }
+}
+
+.article-content {
+    padding: 50px 20px;
+}
+
+.head-list ul {
+    list-style: none;
+}
+
+.head-list a {
+    text-decoration: none;
+}
+
+.head-list a:hover {
+    text-decoration: none;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.head-list > ul {
+    font-size: 1.2rem;
+}
+
+.head-list li li a{
+    font-size: 0.9rem;
+}
+
+.head-list ul a {
+    color: #42c950;
+    font-size: 1rem;
+}

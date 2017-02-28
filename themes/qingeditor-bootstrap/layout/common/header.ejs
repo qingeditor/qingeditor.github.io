@@ -1,0 +1,22 @@
+<%
+    let hiddenCls = "";
+if (page.layout == "doc" || page.layout == 'apidocs') {
+    hiddenCls = "hidden-sm-down";
+}
+%>
+<header class="navbar navbar-fixed-top fixed-header fixed-header-active header <%= hiddenCls %>">
+ <nav class="navbar navbar-light">
+  <div class="">
+   <button class="navbar-toggler hidden-lg-up float-xs-right" type="button" data-toggle="collapse"
+           data-target="#navbarResponsive"
+           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+   <a href="/"><img class="navbar-brand logo" src="/images/logo-green.png"></a>
+
+   <div class="collapse navbar-toggleable-md float-lg-right" id="navbarResponsive">
+    <ul class="nav navbar-nav float-lg-right">
+     <%- header_menu("index") %>
+    </ul>
+   </div>
+  </div>
+ </nav>
+</header>
