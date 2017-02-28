@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
+title: offical site of Qingeditor
+subtitle: A distribution of GNU/Emacs editor
+description: 基于spacemacs改进而来编辑器
+author: zzu_softboy
 language:
-timezone:
+timezone: PRC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -68,4 +68,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: github-qingeditor-site:/qingeditor/qingeditor.github.io
+  branch: master
